@@ -2,13 +2,13 @@
 
 [![Build Status](https://travis-ci.org/IamDH4/goauth.svg?branch=master)](https://travis-ci.org/IamDH4/goauth)
 
-A simple and lightweight user authentication library for GO. Users passwords are salted and hashed with sha256. The entire database is then encrypted with AES using the salt as a key. Once initialized the entire database is cached, providing fast authentication. Any changes to the database are written to disk on execution.
+A simple and lightweight user authentication library for GO. User's passwords are salted and hashed with sha256. The entire database is then encrypted with AES using the salt as a key. Once initialized the entire database is cached, providing fast authentication. Any changes to the database are written to disk on execution.
 ```
 go get github.com/iamdh4/goauth
 ```
 
 ## Examples
-```
+```go
 package main
 
 import (
